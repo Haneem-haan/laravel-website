@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'FirstController@index');
-Route::get('AboutUs','FirstController@aboutUs');
-Route::get('contact-us','FirstController@ContactUs');
+Route::get('/', 'FirstController@index')->name('home');
+Route::group(['prefix'=>'user'],function(){
+    Route::get('About-us','FirstController@aboutUs')->name('about');
+    Route::get('contact-us','FirstController@ContactUs')->name('contact');
+
+});
