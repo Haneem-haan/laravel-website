@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FirstController@index');
+Route::get('AboutUs','FirstController@aboutUs');
+Route::get('contact-us','FirstController@ContactUs');

@@ -10,4 +10,12 @@ class FirstController extends Controller
    {
     return view('welcome');
    }
+   public function AboutUs()
+   {
+    return view('aboutUs');
+   }
+   public function ContactUs()
+   {
+    return view('contact_us');
+   }
 }
