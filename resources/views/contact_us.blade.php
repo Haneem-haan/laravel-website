@@ -7,5 +7,8 @@
 </head>
 <body>
     hey contact us page
+     <button type="button" class="btn btn-info waves-effect waves-light">
+            <a href="{{ route('home') }}">Go to Home</a>
+        </button>
 </body>
 </html>
